@@ -8,8 +8,6 @@ const app = express()
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 
-// routes
-// app.use('/api', require('./routes'))
 require('./routes/index') (app)
 
 module.exports = app
